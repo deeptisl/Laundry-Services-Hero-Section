@@ -10,6 +10,10 @@ body {
   font-family: Arial, sans-serif; /* Simple font */
   background-color: #f0f8ff; /* Light blue background */
   color: #333; /* Dark text */
+  height: 100vh; /* Use viewport height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scroll */
 }
 
 /* Navbar styles - using flexbox */
@@ -54,7 +58,7 @@ body {
   grid-template-columns: 1fr 1fr; /* Two columns */
   gap: 40px;
   padding: 40px;
-  min-height: calc(100vh - 80px); /* Fit in viewport minus navbar */
+  flex: 1; /* Take remaining space */
   align-items: center;
 }
 
